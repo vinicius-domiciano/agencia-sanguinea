@@ -1,0 +1,43 @@
+:root {
+    font-size: 60%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html, body, #root {
+    height: auto;
+    min-height: 100vh;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    height: auto;
+}
+
+header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100vw;
+    height: 64px;
+    border-bottom: solid 3px #DF9B17;
+    left: 0;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}

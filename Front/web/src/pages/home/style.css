@@ -1,0 +1,127 @@
+#containerHome {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 288px 300px;
+}
+
+#containerHome .sectionRow {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#containerHome .canditatosBox {
+    grid-template-columns: 1fr;
+}
+
+#containerHome .imcBox {
+    grid-template-columns: 320px 1fr;
+    grid-gap: 40px;
+}
+
+.canditatosBox .setas {
+    font-size: 4rem;
+}
+
+#boxUf {
+    overflow-y: auto;
+    width: 92%;
+    height: 160px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: column;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#boxUf .card {
+    width: 160px;
+    height: 128px;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#mediaImcBox {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    overflow:hidden;
+}
+
+#mediaImcBox h1 {
+    margin-bottom: 16px;
+}
+
+#mediaImc {
+    overflow-y: auto;
+    width: 100%;
+    height: 160px;
+    display: grid;
+    grid-gap: 16px;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: column;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#mediaImc .card {
+    width: 176px;
+    height: 128px;
+}
+
+#percentual {
+    width: 320px;
+    height: 256px;
+}
+
+#percentual h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#percentual p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#percentual p span{
+    font-weight: normal;
+    padding-top: 16px;
+    font-size: 18px;
+}
+
+.tiposanguineoBox {
+    padding-top: 16px;
+    border-top: solid 3px #000000;
+}
+
+#doadores {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    display: block;
+    padding: 16px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.card p span {
+    font-weight: bold;
+}

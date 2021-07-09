@@ -1,0 +1,17 @@
+-- CRIANDO TABELA candidato
+CREATE TABLE candidato (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    altura FLOAT NOT NULL,
+    cpf VARCHAR(11) NOT NULL UNIQUE,
+    data_nasc DATETIME,
+    email TEXT NOT NULL,
+    nome VARCHAR(220) NOT NULL,
+    nome_mae VARCHAR(220),
+    nome_pai VARCHAR(220),
+    peso FLOAT NOT NULL,
+    sexo BIT,
+    rg VARCHAR(9) NOT NULL,
+    tipo_sanguineo VARCHAR(8) NOT NULL,
+    data_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    data_atualizacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

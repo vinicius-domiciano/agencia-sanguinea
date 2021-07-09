@@ -1,0 +1,18 @@
+-- CRIANDO TABELA endereco
+CREATE TABLE endereco (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id_candidato BIGINT NOT NULL,
+    bairro TEXT NOT NULL,
+    cep VARCHAR(8) NOT NULL,
+    cidade TEXT NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    logradouro TEXT NOT NULL,
+    numero INT NOT NULL,
+    data_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    data_atualizacao DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT FK_ENDERECO_CANDIDATO
+        FOREIGN KEY (id_candidato)
+        REFERENCES candidato (id)
+        ON DELETE NO ACTION
+        ON UPDATE NO ACTION
+);
